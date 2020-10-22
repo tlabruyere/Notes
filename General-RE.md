@@ -37,4 +37,13 @@ Resource:
 # TMUX fu
 
 ```bash
-:setw synchronize-panes                                                                                                                                           ```
+:setw synchronize-panes           
+```
+
+# Install 32-bit bins on Ubuntu
+
+```bash
+dpkg --add-architecture i386
+apt-get update
+apt-get install libc6:i386 libstdc++6:i386
+```
