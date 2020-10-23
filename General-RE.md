@@ -61,3 +61,24 @@ Add terminal focus switching by adding the following to keybindings.json
 
 Reference:
 - https://stackoverflow.com/questions/48440673/how-to-switch-between-terminals-in-visual-studio-code#:~:text=Once%20the%20cursor%20is%20in,or%20ctrl%2Bx%20right%20).k
+
+# IPython Autoreload 
+
+Must have for interactive dev
+
+Create a profile:
+
+```bash
+ipython profile create
+```
+
+Add reload to profile located here `~/.config/ipython/profile_default/ipython_config.py`:
+
+```bash
+c.InteractiveShellApp.extensions = ['autoreload']
+c.InteractiveShellApp.exec_lines = ['%autoreload 2']
+c.InteractiveShellApp.exec_lines.append('print("Warning: disable autoreload in ipython_config.py to improve performance.")')
+```
+
+Reference:
+- https://www.keybits.net/posts/configure-autoreload-for-ipython/
