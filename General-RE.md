@@ -72,7 +72,7 @@ Create a profile:
 ipython profile create
 ```
 
-Add reload to profile located here `~/.config/ipython/profile_default/ipython_config.py`:
+Add reload to profile located here `~/.ipython/profile_default/ipython_config.py`:
 
 ```bash
 c.InteractiveShellApp.extensions = ['autoreload']
