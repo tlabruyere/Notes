@@ -1,4 +1,4 @@
-Windbg commands to know
+# Windbg commands to know
 
 * `r` - show all regiters
 * `d` - dump (repeats last dump command i.e. db, dt, d...
@@ -47,3 +47,17 @@ dpkg --add-architecture i386
 apt-get update
 apt-get install libc6:i386 libstdc++6:i386
 ```
+# Vscode setup 
+
+Add terminal focus switching by adding the following to keybindings.json
+
+```json
+{
+  "key": "shift+cmd+]",
+  "command": "workbench.action.terminal.focusNext",
+  "when": "terminalFocus"
+}
+```
+
+Reference:
+- https://stackoverflow.com/questions/48440673/how-to-switch-between-terminals-in-visual-studio-code#:~:text=Once%20the%20cursor%20is%20in,or%20ctrl%2Bx%20right%20).k
