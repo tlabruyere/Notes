@@ -82,3 +82,17 @@ c.InteractiveShellApp.exec_lines.append('print("Warning: disable autoreload in i
 
 Reference:
 - https://www.keybits.net/posts/configure-autoreload-for-ipython/
+
+# Pwntools 
+
+## Installtion 
+
+```bash
+$ apt-get update
+$ apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
+$ python3 -m pip install --upgrade pip
+$ python3 -m pip install --upgrade pwntools
+```
+
+Reference:
+- https://docs.pwntools.com/en/stable/
