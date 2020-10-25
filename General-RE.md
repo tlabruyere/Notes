@@ -97,8 +97,14 @@ $ python3 -m pip install --upgrade pwntools
 Reference:
 - https://docs.pwntools.com/en/stable/
 
-Note after installing the current vesion it seems to have swtich to using qemu to run bins. The terminal requested me to install either qemu-i386 or qemu-i386-static:
+Note: after installing the current vesion it seems to have swtich to using qemu to run bins. The terminal requested me to install either qemu-i386 or qemu-i386-static:
 
 ```bash
-sudo apt install qemu-system-i386 
+sudo apt install qemu-system-i386 qemu-user
+```
+
+If running in vm, be sure nested virtualization is enabled. Virtualbo seems to have disabled the means to do this from the settings guid. Run
+
+```bash
+VBoxManage modifyvm vm-name --nested-hw-virt on
 ```
