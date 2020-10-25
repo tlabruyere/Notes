@@ -85,7 +85,7 @@ Reference:
 
 # Pwntools 
 
-## Installtion 
+## Installation 
 
 ```bash
 $ apt-get update
@@ -96,3 +96,9 @@ $ python3 -m pip install --upgrade pwntools
 
 Reference:
 - https://docs.pwntools.com/en/stable/
+
+Note after installing the current vesion it seems to have swtich to using qemu to run bins. The terminal requested me to install either qemu-i386 or qemu-i386-static:
+
+```bash
+sudo apt install qemu-system-i386 
+```
